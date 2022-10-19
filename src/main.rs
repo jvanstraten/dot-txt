@@ -1,20 +1,18 @@
 use std::fs::File;
 use std::io::BufReader;
 
-use canvas::LineArt;
-
 mod canvas;
 mod coord;
 mod graph;
 
 fn main() {
     let mut f = BufReader::new(
-        File::open("/home/jeroen-voltron/voltron/projects/011-dingen.dot/test.plain")
+        File::open("test.plain")
             .expect("open failed"),
     );
     dbg!(graph::Graph::from_plain(&mut f).unwrap());
 
-    let f = canvas::Font::generate(&[
+    /*let f = canvas::Font::generate(&[
         (' ', canvas::LineArt::from_bits(0b000_000_000_000_000)),
         ('_', canvas::LineArt::from_bits(0b000_000_000_000_111)),
         ('.', canvas::LineArt::from_bits(0b000_000_000_111_000)),
@@ -54,7 +52,7 @@ fn main() {
     dbg!(f.translate(LineArt::from_bits(0b000_111_000_000_000)));
     dbg!(f.translate(LineArt::from_bits(0b000_000_111_000_000)));
     dbg!(f.translate(LineArt::from_bits(0b000_000_000_111_000)));
-    dbg!(f.translate(LineArt::from_bits(0b000_000_000_000_111)));
+    dbg!(f.translate(LineArt::from_bits(0b000_000_000_000_111)));*/
 
     let mut c = canvas::Canvas::new(200.0);
     c.draw_string(&canvas::InputCoord { x: 100.0, y: 100.0 }, "hello");

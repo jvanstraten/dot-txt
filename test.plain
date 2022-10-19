@@ -1,0 +1,25 @@
+graph 1 3.7361 5.5417
+node "hello\" there" 1.1389 4.25 1.8234 0.5 "hello\" there" solid ellipse black lightgrey
+node a1 1.4167 3.25 0.75 0.5 a1 solid ellipse black lightgrey
+node a2 1.4167 2.25 0.75 0.5 a2 solid ellipse black lightgrey
+node a3 1.5417 1.25 0.75 0.5 a3 solid ellipse black lightgrey
+node b0 2.7639 4.25 0.75 0.5 b0 solid ellipse black lightgrey
+node b1 2.7639 3.25 0.75 0.5 b1 solid ellipse black lightgrey
+node b2 2.9444 2.25 0.75 0.5 b2 solid ellipse black lightgrey
+node b3 2.7639 1.25 0.75 0.5 b3 solid ellipse black lightgrey
+node start 1.9444 5.2917 0.92075 0.5 start solid ellipse black lightgrey
+node end 2.3056 0.25 0.77632 0.5 end solid ellipse black lightgrey
+edge "hello\" there" a1 4 1.2076 3.9958 1.2385 3.8875 1.2758 3.7571 1.3102 3.6365 solid black
+edge a1 a2 4 1.4167 2.9958 1.4167 2.8886 1.4167 2.7599 1.4167 2.6405 solid black
+edge a1 b3 4 1.566 3.0175 1.8007 2.674 2.2576 2.0051 2.5343 1.6001 solid black
+edge a2 a3 4 1.4469 2.0008 1.4607 1.8937 1.4773 1.7643 1.4928 1.6439 solid black
+edge a3 "hello\" there" 7 1.3166 1.4505 1.1718 1.5859 0.99643 1.7828 0.91667 2 0.68729 2.6245 0.86215 3.4094 1.0045 3.8637 solid black
+edge a3 end 4 1.7074 1.0252 1.8071 0.89824 1.9362 0.73402 2.0488 0.59061 solid black
+edge b0 b1 4 2.7639 3.9958 2.7639 3.8886 2.7639 3.7599 2.7639 3.6405 solid black
+edge b1 b2 4 2.8076 3.0008 2.8275 2.8937 2.8515 2.7643 2.8739 2.6439 solid black
+edge b2 a3 4 2.6937 2.0623 2.4756 1.9112 2.1567 1.6902 1.9097 1.519 solid black
+edge b2 b3 4 2.9007 2.0008 2.8809 1.8937 2.8568 1.7643 2.8345 1.6439 solid black
+edge b3 end 4 2.6553 1.0057 2.601 0.89068 2.5342 0.74896 2.4736 0.62031 solid black
+edge start "hello\" there" 4 1.7697 5.0578 1.6649 4.926 1.5295 4.7556 1.4111 4.6065 solid black
+edge start b0 4 2.1223 5.0578 2.2333 4.9204 2.3782 4.7411 2.5022 4.5877 solid black
+stop
