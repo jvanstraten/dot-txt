@@ -260,7 +260,7 @@ impl Scalable for Label {
     }
 }
 
-pub type Coord = crate::coord::Coord<f64>;
+pub type Coord = vector2d::Vector2D<f64>;
 
 impl Scalable for Coord {
     fn scale(&mut self, scale: f64) {
